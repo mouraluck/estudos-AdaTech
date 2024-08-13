@@ -3,6 +3,11 @@
   margin: 0%;
   box-sizing: border-box;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 body,
 button,
 textarea,
@@ -13,10 +18,17 @@ input {
   font-style: normal;
 }
 body {
-  background-color: #cbcccb;
+  /* background-color: #f4f7f4e8; */
+  background-image: linear-gradient(
+    135deg,
+    rgb(122, 8, 133),
+    rgb(231, 79, 231),
+    rgba(122, 8, 133, 100)
+  );
 }
 header {
   background-color: #fff;
+
   height: 80px;
 }
 header .navbar {
@@ -49,10 +61,10 @@ header .navbar .nav-list .nav-item a {
   font-size: 20px;
   font-weight: 500;
 }
-header .navbar .nav-list .nav-item a:hover,
-header .navbar .nav-brand:hover {
+header .navbar .nav-list .nav-item a:hover {
   color: #7a0885;
   transition: 200ms;
+  text-decoration: overline;
 }
 header .navbar #hamburguer-menu {
   display: none;
@@ -89,7 +101,8 @@ main #banner #banner-content .banner-content-subtitle {
   margin-bottom: 38px;
 }
 main #banner #banner-content .banner-content-btn {
-  background-color: #00a8cc;
+  /* background-color: #00a8cc; */
+  background-color: #bb5ed3;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -115,7 +128,7 @@ main #banner .banner-image {
 
 section#posts {
   margin-top: 70px;
-  background-color: #bb94c5;
+  background-color: rgb(160, 27, 160);
 }
 #posts .posts-content {
   padding: 0 2rem;
@@ -141,11 +154,18 @@ section#posts {
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 #posts .posts-content .posts-cards .post-card {
   background-color: #fff;
   padding: 24px;
+  display: block;
 }
+#posts .posts-content .posts-cards .post-card:hover {
+  transition: 300ms;
+  font-size: 23px;
+}
+
 #posts .posts-content .posts-cards .post-card h3 {
   font-size: 26px;
   font-weight: 700;
